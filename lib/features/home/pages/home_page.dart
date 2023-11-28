@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.purple,
         title: const Text('Can\'t Wait 🤩'),
       ),
       body: const _HomePageBody(),
@@ -152,8 +153,8 @@ class _ListViewItem extends StatelessWidget {
                   ),
                   margin: const EdgeInsets.all(10),
                   padding: const EdgeInsets.all(10),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         '0',
                         style: TextStyle(

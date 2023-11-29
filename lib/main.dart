@@ -20,8 +20,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+          primaryColor: Colors.purple,
+          appBarTheme: const AppBarTheme(
+            color: Colors.purple,
+          )),
       home: const AuthGate(),
     );
   }
